@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, Verdana, sans-serif;
+  color: #665544;
+}
+section {
+  width: 750px;
+  border: 1px solid #665544;
+  padding: 1px 0;
+}
+p {
+  padding: 0.5rem;
+  margin: 0;
+  border: 1px solid #665544;
+  box-sizing: border-box;
+  
+}
+
+article {
+  padding-top: 1em;
+  width: 750px;
+}

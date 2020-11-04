@@ -1,0 +1,7 @@
+@import url(normal.css);
+
+p:nth-of-type(2) {
+  position: relative;
+  top: 275px;
+  left: 100px;
+}

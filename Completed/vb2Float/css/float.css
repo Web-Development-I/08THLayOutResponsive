@@ -1,0 +1,25 @@
+article {
+  border: 1px solid black;
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 1em;
+}
+h2 {
+  clear: both;
+  margin-top: 0;
+}
+p {
+  line-height: 1.25;
+  margin: 0;
+}
+img{
+  width: 300px;
+}
+article:first-of-type img {
+  float: left;
+  margin: 0 1em 1em 0; 
+}
+article:last-of-type img {
+  float: right;
+  margin: 0 0 1em 1em;
+}

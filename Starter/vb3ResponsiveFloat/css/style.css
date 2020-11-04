@@ -1,0 +1,28 @@
+/*Responsive Mobile First*/
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #eee;
+}
+header,
+article,
+p,
+h1,
+h2 {
+  box-sizing: border-box;
+}
+header > p:first-of-type {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+/*logo en images niet tonen*/
+header p:last-of-type,
+article > img {
+  display: none;
+}
+/*weergave vanaf width=480px*/
+
+
+/*weergave vanaf width=992px*/
+
+

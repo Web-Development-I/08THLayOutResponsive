@@ -1,0 +1,84 @@
+/*Responsive Mobile First*/
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #eee;
+}
+header,
+article,
+p,
+h1,
+h2 {
+  box-sizing: border-box;
+}
+header > p:first-of-type {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+/*logo en images niet tonen*/
+header p:last-of-type,
+article > img {
+  display: none;
+}
+/*weergave vanaf width=480px*/
+@media screen and (min-width: 480px) {
+  /*h1 en eerste paragraaf in header laten naar rechts floaten*/
+  header h1, header p:first-of-type{
+    width: 70%;
+    float: right;
+  }
+  /* tweede paragraaf in header zichtbaar maken (logo) */ 
+  header p:last-of-type {
+    display:block;
+    width: 25%;
+    padding-right: 1em;
+  }
+  /*afbeelding relatief laten veranderen*/ 
+  header img{
+    max-width:70%;
+  }
+  /*problem collapsing container oplossen*/
+  header{
+    display: flow-root;
+  }
+  /*opmaak article*/
+  article {
+    border: 1px solid gray;
+    margin: 1%;
+    padding: 1%;
+  }
+}
+
+/*weergave vanaf width=992px*/
+@media screen and (min-width: 992px) {
+  /* content van header centreren*/
+  header {
+    text-align: center;
+  }
+  /* breedte van 70 naar 80% brengen */
+  header h1, header p:first-of-type{
+    width: 80%;
+  } 
+  /* breedte van 25 naar 20% brengen */
+  header p:last-of-type {
+    width: 20%;
+  }
+  /* breedte image aanpassen (70 naar 80%)*/
+  header img{
+    max-width:80%;
+  }
+  /* font van eerste paragraaf groter maken */  
+  header > p:first-of-type {
+    font-size: 2em;
+  }
+  /* articles naast elkaar dmv van float*/
+  article {
+    width: 31.333333%;
+    float: left;
+  }
+  /*images van articles zichtbaar maken*/
+  article > img {
+    display:block;
+    width: 100%;
+  } 
+}

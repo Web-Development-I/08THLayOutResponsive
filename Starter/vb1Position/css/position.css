@@ -1,0 +1,30 @@
+div {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #abcdef;
+	width: 600px;
+	height: 1600px;
+	margin: 0 auto;
+	/*position:relative;*/
+}
+div > div{
+	box-sizing: border-box;
+	text-align: center;
+	margin:0;
+	height: 200px;
+	width: 200px;
+}
+
+div > div:first-child {	
+	background-color: red;
+	
+}
+
+div > div:nth-child(2) {
+	background-color: yellowgreen;
+	
+}
+
+div > div:last-child {
+	background-color: dimgrey;
+	
+}
