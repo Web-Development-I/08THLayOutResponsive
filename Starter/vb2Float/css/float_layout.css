@@ -18,23 +18,20 @@ header, footer {
   background-color:grey;
 }
 
-main {  
-  display: flow-root;
-}
+
 
 section {
   background-color:green;
-  float: right;
-  width: 60%;
+  
 }
 
 aside {
   background-color: red;
-  width: 35%;
+  
 }
 
 footer {
-  clear: right;
+  
   margin-bottom:0px;
 }
 
